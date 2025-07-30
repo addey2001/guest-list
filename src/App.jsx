@@ -19,10 +19,12 @@ return (
 
 <h2>RSVP Status</h2>
 <ul>{guests.map(({name, rsvp}, idx) => {
-  return 
-  <li key={idx}> 
+  return (
+ <li key={idx}> 
     {name} - {rsvp ? "Attending" : "Not Attending"}
 </li>
+  )
+ 
 })
 
 }</ul>
