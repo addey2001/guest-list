@@ -15,6 +15,7 @@ const App = () => {
 return (
 <>
 <h1>Guest List</h1>
+<h2>Currently attending: {guests.filter(guest => guest.rsvp).length}</h2>
 
 <h2>RSVP Status</h2>
 <ul>{guests.map(({name, rsvp}, idx) => {
